@@ -1,0 +1,71 @@
+/* General Styles */
+body {
+    background-color: #ffb6c1;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Main container */
+.container {
+    margin-top: 15vh;
+}
+
+/* Message Text */
+h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Button Styling */
+.btn {
+    font-size: 20px;
+    padding: 12px 25px;
+    margin: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Yes Button */
+.yes {
+    background-color: #28a745;
+    color: white;
+}
+
+.yes:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+/* No Button */
+.no {
+    background-color: #dc3545;
+    color: white;
+    position: relative;
+}
+
+.no:hover {
+    background-color: #c82333;
+}
+
+/* Heart Animation */
+.heart {
+    position: absolute;
+    font-size: 2rem;
+    color: red;
+    animation: fall 3s linear infinite;
+}
+
+/* Falling Heart Animation */
+@keyframes fall {
+    from { transform: translateY(-100px) scale(1); opacity: 1; }
+    to { transform: translateY(100vh) scale(1.5); opacity: 0; }
+}
